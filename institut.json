@@ -1,0 +1,85 @@
+{
+    "Desenvolupament d’aplicacions web": [
+        {
+            "Modulos": [
+                {
+                    "MP06-Desenvolupament web entorn client": [
+                        {
+                            "UFs": [
+                                "UF1-Sintaxis del lenguaje", 
+                                "UF3-DOM", 
+                                "UF2-Estructuras definidas", 
+                                "UF4-Comunicación asíncrona cliente-servidor"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "MP07-Desenvolupament web en entorn servidor": [
+                        {
+                            "UFs": [
+                                "UF1-Desenvolupament web entorn servidor", 
+                                "UF3-Accés a dades", 
+                                "UF2-Generació dinàmica de pàgines web", 
+                                "UF4-Serveis web"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "MP08-Desplegament d'aplicacions web": [
+                        {
+                            "UFs": [
+                                "UF4-control de versions i documentació", 
+                                "UF1-Servidor web i de transferència d'arxius", 
+                                "UF2-Servidors d'aplicacions", 
+                                "UF3-Desplegament"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "MP09-Disseny d'interfícies Web": [
+                        {
+                            "UFs": [
+                                "UF1-Disseny de la interfície", 
+                                "UF2-Elements multimèdia: creació i integració", 
+                                "UF3-Accessibilitat i usabilitat web"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "MPDual-Apps Híbrides i Javascript entorn servidor": [
+                        {
+                            "UFs": [
+                                "UF1-NodeJS", 
+                                "UF2-Apps Híbrides amb Cordova", 
+                                "UF3-MongoDB amb NodeJS"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "MPDual-Programació Avançada": [
+                        {
+                            "UFs": [
+                                "UF1-Repàs de Python per consola", 
+                                "UF2-Python Web"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "MP12-Projecte": [
+                        {
+                            "UFs": [
+                                "UF1-Proyecto"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
