@@ -1,85 +1,121 @@
 {
-    "Desenvolupament d’aplicacions web": [
-        {
-            "Modulos": [
-                {
-                    "MP06-Desenvolupament web entorn client": [
-                        {
-                            "UFs": [
-                                "UF1-Sintaxis del lenguaje", 
-                                "UF3-DOM", 
-                                "UF2-Estructuras definidas", 
-                                "UF4-Comunicación asíncrona cliente-servidor"
-                            ]
-                        }
-                    ]
-                }, 
-                {
-                    "MP07-Desenvolupament web en entorn servidor": [
-                        {
-                            "UFs": [
-                                "UF1-Desenvolupament web entorn servidor", 
-                                "UF3-Accés a dades", 
-                                "UF2-Generació dinàmica de pàgines web", 
-                                "UF4-Serveis web"
-                            ]
-                        }
-                    ]
-                }, 
-                {
-                    "MP08-Desplegament d'aplicacions web": [
-                        {
-                            "UFs": [
-                                "UF4-control de versions i documentació", 
-                                "UF1-Servidor web i de transferència d'arxius", 
-                                "UF2-Servidors d'aplicacions", 
-                                "UF3-Desplegament"
-                            ]
-                        }
-                    ]
-                }, 
-                {
-                    "MP09-Disseny d'interfícies Web": [
-                        {
-                            "UFs": [
-                                "UF1-Disseny de la interfície", 
-                                "UF2-Elements multimèdia: creació i integració", 
-                                "UF3-Accessibilitat i usabilitat web"
-                            ]
-                        }
-                    ]
-                }, 
-                {
-                    "MPDual-Apps Híbrides i Javascript entorn servidor": [
-                        {
-                            "UFs": [
-                                "UF1-NodeJS", 
-                                "UF2-Apps Híbrides amb Cordova", 
-                                "UF3-MongoDB amb NodeJS"
-                            ]
-                        }
-                    ]
-                }, 
-                {
-                    "MPDual-Programació Avançada": [
-                        {
-                            "UFs": [
-                                "UF1-Repàs de Python per consola", 
-                                "UF2-Python Web"
-                            ]
-                        }
-                    ]
-                }, 
-                {
-                    "MP12-Projecte": [
-                        {
-                            "UFs": [
-                                "UF1-Proyecto"
-                            ]
-                        }
-                    ]
+    "code": "IC01",
+    "name": "Desenvolupament d'aplicaciones Webs",
+    "hours": "2000",
+    "modules": {
+        "MP06": {
+            "code": "MP06",
+            "name": "Desenvolupament web entorn client",
+            "hours": "150",
+            "ufs": {
+                "UF1": {
+                    "code": "UF1",
+                    "name": "Sintaxis del lenguaje"
+                },
+                "UF2": {
+                    "code": "UF2",
+                    "name": "DOM"
+                },
+                "UF3": {
+                    "code": "UF3",
+                    "name": "DOM"
+                },
+                "UF4": {
+                    "code": "UF4",
+                    "name": "DOM"
                 }
-            ]
+            }
+        },
+        "MP07": {
+            "code": "MP07",
+            "name": "Desenvolupament web en entorn servidor",
+            "hours": "200",
+            "ufs": {
+                "UF1": {
+                    "code": "UF1",
+                    "name": "Sintaxis del lenguaje"
+                },
+                "UF2": {
+                    "code": "UF2",
+                    "name": "Accés a dades"
+                },
+                "UF3": {
+                    "code": "UF3",
+                    "name": "Accés a dades"
+                },
+                "UF4": {
+                    "code": "UF4",
+                    "name": "Accés a dades"
+                }
+            }
+        },
+        "MP08": {
+            "code": "MP08",
+            "name": "Desenvolupament web en entorn servidor",
+            "hours": "200",
+            "ufs": {
+                "UF1": {
+                    "code": "UF1",
+                    "name": "Sintaxis del lenguaje"
+                },
+                "UF2": {
+                    "code": "UF2",
+                    "name": "Accés a dades"
+                },
+                "UF3": {
+                    "code": "UF3",
+                    "name": "Accés a dades"
+                },
+                "UF4": {
+                    "code": "UF4",
+                    "name": "Accés a dades"
+                }
+            }
+        },
+        "MP09": {
+            "code": "MP09",
+            "name": "Desenvolupament web en entorn servidor",
+            "hours": "200",
+            "ufs": {
+                "UF1": {
+                    "code": "UF1",
+                    "name": "Sintaxis del lenguaje"
+                },
+                "UF2": {
+                    "code": "UF2",
+                    "name": "Accés a dades"
+                },
+                "UF3": {
+                    "code": "UF3",
+                    "name": "Accés a dades"
+                }
+            }
+        },
+        "DUAL": {
+            "code": "DUAL",
+            "name": "Desenvolupament web en entorn servidor",
+            "hours": "200",
+            "ufs": {
+                "UF1": {
+                    "code": "UF1",
+                    "name": "Sintaxis del lenguaje"
+                },
+                "UF2": {
+                    "code": "UF2",
+                    "name": "Accés a dades"
+                }
+            }
+        },
+        "Proyecto": {
+            "code": "PR",
+            "name": "Credito de Sintesis",
+            "hours": "200",
+            "ufs": {
+                "UF1": {
+                    "code": "UF1",
+                    "name": "Proyecto"
+                }
+            }
         }
-    ]
+    }
 }
