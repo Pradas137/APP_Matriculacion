@@ -14,7 +14,7 @@
                 },
                 "UF2": {
                     "code": "UF2",
-                    "name": "DOM"
+                    "name": "Estructuras definidas por el programador"
                 },
                 "UF3": {
                     "code": "UF3",
@@ -22,7 +22,7 @@
                 },
                 "UF4": {
                     "code": "UF4",
-                    "name": "DOM"
+                    "name": "Comunicación asíncrona cliente-servidor"
                 }
             }
         },
@@ -33,11 +33,11 @@
             "ufs": {
                 "UF1": {
                     "code": "UF1",
-                    "name": "Sintaxis del lenguaje"
+                    "name": "Desenvolupament web entorn servidor"
                 },
                 "UF2": {
                     "code": "UF2",
-                    "name": "Accés a dades"
+                    "name": "Generació dinàmica de pàgines web"
                 },
                 "UF3": {
                     "code": "UF3",
@@ -45,71 +45,74 @@
                 },
                 "UF4": {
                     "code": "UF4",
-                    "name": "Accés a dades"
+                    "name": "Serveis web"
                 }
             }
         },
         "MP08": {
             "code": "MP08",
-            "name": "Desenvolupament web en entorn servidor",
+            "name": "Desplegament d'aplicacions web",
             "hours": "200",
             "ufs": {
                 "UF1": {
                     "code": "UF1",
-                    "name": "Sintaxis del lenguaje"
+                    "name": "Servidor web i de transferència d'arxius"
                 },
                 "UF2": {
                     "code": "UF2",
-                    "name": "Accés a dades"
+                    "name": "Servidors d'aplicacions"
                 },
                 "UF3": {
                     "code": "UF3",
-                    "name": "Accés a dades"
+                    "name": "Desplegament"
                 },
                 "UF4": {
                     "code": "UF4",
-                    "name": "Accés a dades"
+                    "name": "control de versions i documentació"
                 }
             }
         },
         "MP09": {
             "code": "MP09",
-            "name": "Desenvolupament web en entorn servidor",
-            "hours": "200",
+            "name": "Disseny d'interfícies Web",
+            "hours": "66",
             "ufs": {
                 "UF1": {
                     "code": "UF1",
-                    "name": "Sintaxis del lenguaje"
+                    "name": "Disseny de la interfície",
+                    "horas": "28"
                 },
                 "UF2": {
                     "code": "UF2",
-                    "name": "Accés a dades"
+                    "name": "Elements multimèdia: creació i integració",
+                    "horas": "19"
                 },
                 "UF3": {
                     "code": "UF3",
-                    "name": "Accés a dades"
+                    "name": "Accessibilitat i usabilitat web",
+                    "horas": "19"
                 }
             }
         },
         "DUAL": {
             "code": "DUAL",
-            "name": "Desenvolupament web en entorn servidor",
+            "name": "Apps Híbrides i Javascript entorn servidor",
             "hours": "200",
             "ufs": {
                 "UF1": {
                     "code": "UF1",
-                    "name": "Sintaxis del lenguaje"
+                    "name": "NodeJS"
                 },
                 "UF2": {
                     "code": "UF2",
-                    "name": "Accés a dades"
+                    "name": "Apps Híbrides amb Cordova"
                 }
             }
         },
         "Proyecto": {
             "code": "PR",
             "name": "Credito de Sintesis",
-            "hours": "200",
+            "hours": "400",
             "ufs": {
                 "UF1": {
                     "code": "UF1",
