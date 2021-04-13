@@ -1,26 +1,29 @@
+(function($){
+  $(function(){
+    $('.sidenav').sidenav();
+    $('.tabs').tabs({ "swipeable": true });
+  });
+})(jQuery)
+
+function data() {
+    jQuery.each( institut['modules'], function( i, mp){
+        $('.collapsible').first().append('<li><div class="collapsible-header">'+mp['code']+'. '+mp['name']+'</div><div class="collapsible-body"><div class="row"></div></div></li>');
+        jQuery.each(mp['ufs'], function(x, uf){
+            $('.row').last().append('<label><div class="col s6 m4" style="color:black;"><input type="checkbox" class="filled-in"><span>'+uf['code']+'. '+uf['name']+'</span></input></div></label>');
+        })
+    });
+}
+
 document.addEventListener('deviceready', onDeviceReady, false);
 
 function onDeviceReady() {
-	console.log('Running cordova-' + cordova.platformId + '@' + cordova.version);
+    // Cordova is now initialized. Have fun!
 
-	$(document).ready(function(){
-		$(document).bind('deviceready', function(){
-			var blog = $('#blog');
-			$.ajax({
-				url: '/institut.json',
-				dataType: 'jsonp',
-				jsonp: 'jsoncallback',
-				timeout: 5000,
-				success: function(data, status){
-					$.each(data, function(i,item){ 
-						var blogpost = '<div data-role="collapsible" data-collapsed="true" data-content-them="f"><h4>'+item.title+'</h4>'+ '<p>'+item.date+'<br>'+ item.blog_text+'</p></div>';
-						blog.append(blogpost);
-					});
-				},
-				error: function(){
-					blog.text('We could not load your data, please try again.');
-				}
-			});
-		});
-	});
+    console.log('Running cordova-' + cordova.platformId + '@' + cordova.version);
+    $(document).ready(function(){
+        $('.collapsible').collapsible();
+        data();
+    });
+    
+    
 }

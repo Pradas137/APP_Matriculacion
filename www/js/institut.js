@@ -1,4 +1,4 @@
-{
+var institut = {
     "code": "IC01",
     "name": "Desenvolupament d'aplicaciones Webs",
     "hours": "2000",
