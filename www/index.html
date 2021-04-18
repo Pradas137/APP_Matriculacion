@@ -26,27 +26,99 @@
                 <ul id="nav-mobile" class="sidenav">
                     <li><a href="#">Navbar Link</a></li>
                 </ul>
-                <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menú</i></a>
                 </div>
             </nav>
 
 
             <!-- Sections bar-->
             <ul id="tabs" class="tabs">
-                <li class="tab col s3 m3 l3 xl3"><a class="active" href="#swipe-1">Tablero</a></li>
-                <li class="tab col s3 m3 l3 xl3"><a href="#swipe-2">Documentos</a></li>
+                <li class="tab col s3 m3 l3 xl3"><a class="active" href="#swipe-1">Tauler</a></li>
+                <li class="tab col s3 m3 l3 xl3"><a href="#swipe-2">Documents</a></li>
                 <li class="tab col s3 m3 l3 xl3"><a href="#swipe-3">UFs</a></li>
-                <li class="tab col s3 m3 l3 xl3"><a href="#swipe-4">Datos Personales</a></li>
+                <li class="tab col s3 m3 l3 xl3"><a href="#swipe-4">Dades Personals</a></li>
             </ul>
 
             <div id="swipe-1" class="col s12 black">
-                
+                <div class="col s12 m12 l12 center">
+                    <h1 style="color:yellow">Instituto público Esteve Terradas</h1>
+                    <img src="images/ies.jpeg" width="460" height="345">
+                </div>
             </div>
 
             <div id="swipe-2" class="col s12 green">
-                                             
-            </div>
+                <ul id="list" class="collection">
+                    <li>
+                        <a class="collection-item">Targeta del DNI
+                            <i class="secondary-content material-icons dp48" style="color:green">lens</i>
+                            <i class="secondary-content material-icons dp48">lens</i>
+                            <i class="secondary-content material-icons dp48">lens</i>
+                        </a>
+                    </li>
+                    <a class="collection-item">Targeta Sanitaria
+                        <i class="secondary-content material-icons dp48">lens</i>
+                        <i class="secondary-content material-icons dp48" style="color:orange">lens</i>
+                        <i class="secondary-content material-icons dp48">lens</i>
+                    </a>
+                    <a class="collection-item">Titul del Estudiant
+                        <i class="secondary-content material-icons dp48">lens</i>
+                        <i class="secondary-content material-icons dp48">lens</i>
+                        <i class="secondary-content material-icons dp48" style="color:red">lens</i>
+                    </a>
+                    <a class="collection-item">Beque Estudiantil
+                        <i class="secondary-content material-icons dp48">lens</i>
+                        <i class="secondary-content material-icons dp48" style="color:orange">lens</i>
+                        <i class="secondary-content material-icons dp48">lens</i>
+                    </a>
+                    <a class="collection-item">Targeta Familia Numerose
+                        <i class="secondary-content material-icons dp48">lens</i>
+                        <i class="secondary-content material-icons dp48">lens</i>
+                        <i class="secondary-content material-icons dp48" style="color:red">lens</i>
+                    </a>
 
+                    <a href="#!" class="collection-item">Targeta Familia Monoparental
+                        <i class="secondary-content material-icons dp48" style="color:green">lens</i>
+                        <i class="secondary-content material-icons dp48">lens</i>
+                        <i class="secondary-content material-icons dp48">lens</i>
+                    </a>
+                </ul>
+                <form action="upload.php" method="post" enctype="multipart/form-data">
+                    Seleccionar fichers a pulla:
+                    <input type="file" name="fileToUpload" id="fileToUpload">
+                    <input type="submit" value="subir Documento" name="submit">
+                </form>                
+            </div>
+            <div id="swipe-4" class="col s12 orange">
+                <div>
+                    <form action="" method="GET"> <!-- Change The Form Method From Here-->
+                        <div class="card-panel z-depth-5">
+                             <div class="col s12 m12 l12 center">
+                                <img src="images/destiny.jpg" alt="" class="responsive-img circle" style="width:200px;">
+                                <h1>Dades de l'Alumne</h1>
+                            </div>
+                        <div class="col s6 m12 l12">
+                            <div class="input-field">
+                                <i class="material-icons prefix">person</i>
+                                <label style="font-size:20px;" for="username">Nom: <span>Adrian</span></label>
+                            </div><br>
+                            <div class="input-field">
+                                <i class="material-icons prefix">person</i>
+                                <label style="font-size:20px;" for="username">Cognom: <span>Pradas</span></label>
+                            </div><br>
+                            <div class="input-field">
+                                <i class="material-icons prefix">mail</i>
+                                <label style="font-size:20px;" for="username">Email:   <span>pradas1372gmail.com</span></label>
+                            </div><br>
+                            <div class="input-field">
+                                <i class="material-icons prefix">local_phone
+</i>
+                                <label style="font-size:20px;" for="username">Telefon:   <span>1234567</span></label>
+                            </div><br>
+                        </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
             <div id="swipe-3" class="col s12 red">
                 <div>
                     <ul class="collapsible">
@@ -54,9 +126,7 @@
                     </ul>
                 </div>
             </div>
-            <div id="swipe-4" class="col s12 orange">
-                
-            </div>
+            
         <!--  Scripts-->
         <script src="cordova.js"></script>
         <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>

@@ -8,19 +8,15 @@
 document.addEventListener('deviceready', onDeviceReady, false);
 
 function onDeviceReady() {
-    // Cordova is now initialized. Have fun!
-
     console.log('Running cordova-' + cordova.platformId + '@' + cordova.version);
     $(document).ready(function(){
         $('.collapsible').collapsible();
         matriculacionInfo();
-    });
-    
-    
+        infoAlumne();
+    });  
 }
 
-
-function matriculacionInfo() {
+function matriculacionInfo(){
     var institut = {
     "code": "IC01",
     "name": "Desenvolupament d'aplicaciones Webs",
@@ -145,10 +141,10 @@ function matriculacionInfo() {
         }
     }
 }
-    jQuery.each(institut['modules'], function( i, mp){
-        $('.collapsible').first().append('<li><div class="collapsible-header">'+mp['code']+' - '+mp['name']+'</div><div class="collapsible-body"><div class="row"></div></div></li>');
-        jQuery.each(mp['ufs'], function(x, uf){
-            $('.row').last().append('<div id="uf" class="col s6"><span>'+uf['code']+' - '+uf['name']+'</span></div>');
-        })
-    });
+jQuery.each(institut['modules'], function( i, mp){
+    $('.collapsible').first().append('<li><div class="collapsible-header">'+mp['code']+' - '+mp['name']+'</div><div class="collapsible-body"><div class="row"></div></div></li>');
+    jQuery.each(mp['ufs'], function(x, uf){
+    $('.row').last().append('<div id="uf" class="col s6"><span>'+uf['code']+' - '+uf['name']+'</span></div>');
+    })
+});
 }
