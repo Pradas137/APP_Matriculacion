@@ -142,7 +142,8 @@ function matriculacionInfo(){
     }
 }
 jQuery.each(institut['modules'], function( i, mp){
-    $('.collapsible').first().append('<li><div class="collapsible-header">'+mp['code']+' - '+mp['name']+'</div><div class="collapsible-body"><div class="row"></div></div></li>');
+    var horas = "horas";
+    $('.collapsible').first().append('<li><div class="collapsible-header">'+mp['code']+' - '+mp['name']+' ----> '+horas+'('+mp['hours']+')'+'</div><div class="collapsible-body"><div class="row"></div></div></li>');
     jQuery.each(mp['ufs'], function(x, uf){
     $('.row').last().append('<div id="uf" class="col s6"><span>'+uf['code']+' - '+uf['name']+'</span></div>');
     })
