@@ -12,8 +12,26 @@ function onDeviceReady() {
     $(document).ready(function(){
         $('.collapsible').collapsible();
         matriculacionInfo();
-        infoAlumne();
+        user();
     });  
+}
+function user(){
+var alumne = {
+    "codeInstitut": "1111",
+    "nameInstitut": "Esteve terradas - illa",
+    "alumnes": {
+        "alumne": {
+            "name": "Adrian",
+            "firstname": "Pradas",
+            "lastname": "Muños-Reja",
+            "code": "Alumne1",
+            "edat": "25"
+            }
+        }
+    }
+    $.each(alumne['alumnes'], function( i, user){
+    $('.user').first().append('<form>'+'<div class="card-panel z-depth-5">'+'<div class="col s6 m12 l12 center">'+' <img src="images/destiny.jpg" alt="" class="responsive-img circle" style="width:200px;"><h1>Dades de Alumne</h1>'+'</div>'+'<div class="">'+'<label style="font-size:15px;">Nom: </label>'+'<span>'+ user['name']+'</span>'+'</div> '+'<div class="">'+'<label style="font-size:15px;">Cognom1: </label>'+'<span>'+user['firstname']+'</span>'+'</div>'+'<div class="">'+'<label style="font-size:15px;">Cognom2 :</label>'+'<span>'+user['lastname']+'</span>'+'</div>'+'<div class="">'+'<label id="edat" style="font-size:15px;">edat: </label>'+'<span>'+user['edat']+'</span>'+'</div>'+'</div>'+'</div>'+'</div>'+'</form>');
+});
 }
 
 function matriculacionInfo(){
@@ -141,10 +159,10 @@ function matriculacionInfo(){
         }
     }
 }
-jQuery.each(institut['modules'], function( i, mp){
+$.each(institut['modules'], function( i, mp){
     var horas = "horas";
     $('.collapsible').first().append('<li><div class="collapsible-header">'+mp['code']+' - '+mp['name']+' ----> '+horas+'('+mp['hours']+')'+'</div><div class="collapsible-body"><div class="row"></div></div></li>');
-    jQuery.each(mp['ufs'], function(x, uf){
+    $.each(mp['ufs'], function(x, uf){
     $('.row').last().append('<div id="uf" class="col s6"><span>'+uf['code']+' - '+uf['name']+'</span></div>');
     })
 });
