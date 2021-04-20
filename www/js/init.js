@@ -163,7 +163,19 @@ $.each(institut['modules'], function( i, mp){
     var horas = "horas";
     $('.collapsible').first().append('<li><div class="collapsible-header">'+mp['code']+' - '+mp['name']+' ----> '+horas+'('+mp['hours']+')'+'</div><div class="collapsible-body"><div class="row"></div></div></li>');
     $.each(mp['ufs'], function(x, uf){
-    $('.row').last().append('<div id="uf" class="col s6"><span>'+uf['code']+' - '+uf['name']+'</span></div>');
+    $('.row').last().append('<label><div id="uf" class="col s6"><input type="checkbox" class="filled-in case"><span>'+uf['code']+' - '+uf['name']+'</span></div></label>');
     })
+});
+
+$(".selectall").on("click", function() {
+  $(".case").prop("checked", this.checked);
+});
+
+$(".case").on("click", function() {
+  if ($(".case").length == $(".case:checked").length) {
+    $("#selectall").prop("checked", true);
+  } else {
+    $(".selectall").prop("checked", false);
+  }
 });
 }
